@@ -1,0 +1,11 @@
+id = "sagemath"
+name = "SageMath"
+version = "0.0.1"
+schema_version = 1
+authors = ["Mathias Hall-Andersen <mathias@hall-andersen.dk>"]
+description = "SageMath Support for Zed"
+repository = "https://github.com/rot256/sagemath-zed"
+
+[grammars.python]
+repository = "https://github.com/tree-sitter/tree-sitter-python"
+commit = "8c65e256f971812276ff2a69a2f515c218ed7f82"

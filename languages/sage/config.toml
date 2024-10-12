@@ -1,0 +1,5 @@
+name = "SageMath"
+grammar = "python"
+path_suffixes = ["sage"]
+line_comments = ["# "]
+block_comments = [["\"\"\"", "\"\"\""], ["'''", "'''"]]
