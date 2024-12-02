@@ -444,3 +444,17 @@
     (string
       (string_content) @string.regexp))
   (#eq? @_re "re"))
+
+; SageMath specific syntax:
+
+(sage_gen_assignment
+  ".<" @punctuation.bracket
+  ">" @punctuation.bracket)
+(sage_gen_assignment
+  "," @punctuation.delimiter)
+(sage_ellipsis_expr
+  ".." @punctuation.delimiter)
+(sage_ellipsis_expr
+  ",.." @punctuation.delimiter)
+(sage_ellipsis_expr
+  ",..," @punctuation.delimiter)
