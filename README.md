@@ -1,6 +1,7 @@
 # Zed SageMath
 
 Adds support for [SageMath](https://www.sagemath.org/) in the [Zed text editor](https://zed.dev/).
+
 The [Tree Sitter Grammar is provided by Håvard Damm-Johnsen](https://github.com/havarddj/tree-sitter-sage).
 
 ## Limitations
