@@ -1,6 +1,6 @@
 id = "sagemath"
 name = "SageMath"
-version = "0.0.1"
+version = "0.1.0"
 schema_version = 1
 authors = ["Mathias Hall-Andersen <mathias@hall-andersen.dk>"]
 description = "SageMath Support for Zed"

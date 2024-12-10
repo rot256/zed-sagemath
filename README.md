@@ -1,15 +1,13 @@
 # Zed SageMath
 
 Adds support for [SageMath](https://www.sagemath.org/) in the [Zed text editor](https://zed.dev/).
+The [Tree Sitter Grammar is provided by Håvard Damm-Johnsen](https://github.com/havarddj/tree-sitter-sage).
 
 ## Limitations
 
-Currently, the [Tree Sitter Grammar is simply Python](https://github.com/tree-sitter/tree-sitter-python).
-Additionally, the Python language servers do not work with SageMath.
-In the future I hope to add a SageMath grammar and language server:
-
-- Support Sage-specific syntax (e.g. `P.<x,y> = PolynomialRing(QQ)`).
-- Explore if rewriting the Sage-specific expressions to Python and using a Python language server is feasible.
+In the future I hope to add a language server:
+exploring if rewriting the Sage-specific expressions to Python (or simply using the Sage compiled)
+and using a Python language server is feasible.
 
 ## Contributing
 
