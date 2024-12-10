@@ -8,7 +8,7 @@ The [Tree Sitter Grammar is provided by Håvard Damm-Johnsen](https://github.com
 
 In the future I hope to add a language server:
 exploring if rewriting the Sage-specific expressions to Python (or simply using the Sage compiled)
-and using a Python language server is feasible.
+together with a Python language server is feasible.
 
 ## Contributing
 
