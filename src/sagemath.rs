@@ -18,6 +18,13 @@ impl zed::Extension for SageMathExtension {
             .as_ref()
             .and_then(|binary| binary.arguments.clone())
             .unwrap_or_default();
+        let mut env = binary
+            .as_ref()
+            .and_then(|binary| binary.env.clone())
+            .unwrap_or_default();
+        for (key, value) in worktree.shell_env() {
+            env.entry(key).or_insert(value);
+        }
         let path = binary
             .and_then(|binary| binary.path)
             .or_else(|| worktree.which("sagelsp"))
@@ -28,7 +35,7 @@ impl zed::Extension for SageMathExtension {
         Ok(zed::Command {
             command: path,
             args,
-            env: vec![],
+            env: env.into_iter().collect(),
         })
     }
 }
